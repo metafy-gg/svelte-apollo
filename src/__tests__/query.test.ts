@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from "@apollo/client/core";
 import { get } from "svelte/store";
 import { getClient, query, setClient } from "..";
 import { Result } from "../observable";

@@ -1,4 +1,4 @@
-import { ApolloClient, DataProxy, OperationVariables } from "@apollo/client";
+import { ApolloClient, DataProxy, OperationVariables } from "@apollo/client/core";
 import { DocumentNode } from "graphql";
 import { onMount } from "svelte";
 import { getClient } from "./context";

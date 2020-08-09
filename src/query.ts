@@ -1,4 +1,4 @@
-import { ApolloQueryResult, WatchQueryOptions } from "@apollo/client";
+import { ApolloQueryResult, WatchQueryOptions } from "@apollo/client/core";
 import { DocumentNode } from "graphql";
 import { getClient } from "./context";
 import { observableQueryToReadable, ReadableQuery, Result } from "./observable";

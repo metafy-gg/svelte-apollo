@@ -3,7 +3,7 @@ import {
 	FetchResult,
 	Observable,
 	ObservableQuery,
-} from "@apollo/client";
+} from "@apollo/client/core";
 import { Readable, readable } from "svelte/store";
 
 // Match Apollo's hook approach, by returning a result with three states:
