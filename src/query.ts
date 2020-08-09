@@ -17,6 +17,7 @@ export function query<TData = any, TVariables = any>(
 		try {
 			// undefined = skip initial value (not in cache)
 			initialValue = client.readQuery(queryOptions) || undefined;
+			initialValue = { loading: !initialValue, data: initialValue } as any;
 		} catch (err) {
 			// Ignore preload errors
 		}
