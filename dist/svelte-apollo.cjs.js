@@ -132,7 +132,7 @@ function query(query, options) {
         try {
             // undefined = skip initial value (not in cache)
             initialValue = client.readQuery(queryOptions) || undefined;
-            initialValue = { loading: !!initialValue, data: initialValue };
+            initialValue = { loading: !initialValue, data: initialValue };
         }
         catch (err) {
             // Ignore preload errors
