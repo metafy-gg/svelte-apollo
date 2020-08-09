@@ -1,5 +1,5 @@
 /// <reference types="zen-observable" />
-import { ApolloClient, FetchResult, MutationOptions, ApolloError, ObservableQuery, WatchQueryOptions, OperationVariables, DataProxy, SubscriptionOptions } from '@apollo/client';
+import { ApolloClient, FetchResult, MutationOptions, ApolloError, ObservableQuery, WatchQueryOptions, OperationVariables, DataProxy, SubscriptionOptions } from '@apollo/client/core';
 import { DocumentNode } from 'graphql';
 import { Readable } from 'svelte/store';
 

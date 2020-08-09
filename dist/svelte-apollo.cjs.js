@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var svelte = require('svelte');
-var client = require('@apollo/client');
+var core = require('@apollo/client/core');
 var store = require('svelte/store');
 
 var CLIENT = typeof Symbol !== "undefined" ? Symbol("client") : "@@client";
@@ -66,7 +66,7 @@ function observableToReadable(observable, initialValue) {
                 return;
             }
             if (result.errors) {
-                var error = new client.ApolloError({ graphQLErrors: result.errors });
+                var error = new core.ApolloError({ graphQLErrors: result.errors });
                 set({ loading: false, data: undefined, error: error });
             }
             else {

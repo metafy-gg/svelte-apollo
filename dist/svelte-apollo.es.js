@@ -1,5 +1,5 @@
 import { getContext, setContext, onMount } from 'svelte';
-import { ApolloError } from '@apollo/client';
+import { ApolloError } from '@apollo/client/core';
 import { readable } from 'svelte/store';
 
 var CLIENT = typeof Symbol !== "undefined" ? Symbol("client") : "@@client";
